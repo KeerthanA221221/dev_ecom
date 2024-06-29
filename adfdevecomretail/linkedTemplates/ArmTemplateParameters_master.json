@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevecomretail"
+		},
+		"LS_SqlServer1_password": {
+			"value": ""
+		},
+		"LS_AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"LS_SqlServer1_properties_typeProperties_server": {
+			"value": "KeerthanaA\\SQLEXPRESS"
+		},
+		"LS_SqlServer1_properties_typeProperties_database": {
+			"value": "salesecom"
+		},
+		"LS_SqlServer1_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"LS_AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adlssidevecom2.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
