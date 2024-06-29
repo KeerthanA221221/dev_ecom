@@ -1,0 +1,24 @@
+{
+	"name": "sch_trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_ADLS_PARQ",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/payment/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/1edb5067-92e5-41ad-b11f-edea212e956f/resourceGroups/rg_dev_ecom/providers/Microsoft.Storage/storageAccounts/adlsrawecom",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
