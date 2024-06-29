@@ -1,0 +1,24 @@
+{
+	"name": "sch_rest_parq_trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_REST_PARQ",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 1,
+				"startTime": "2024-06-29T18:16:00",
+				"timeZone": "Eastern Standard Time"
+			}
+		}
+	}
+}
