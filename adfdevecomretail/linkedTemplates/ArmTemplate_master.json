@@ -7,13 +7,89 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adfdevecomretail"
 		},
+		"LS_AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_AzureDataLakeStorage1'"
+		},
+		"LS_AzureDataLakeStorage2_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_AzureDataLakeStorage2'"
+		},
+		"LS_AzureDataLakeStorage_OUTPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_AzureDataLakeStorage_OUTPUT'"
+		},
+		"LS_AzureDataLakeStorage_PARQ_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_AzureDataLakeStorage_PARQ'"
+		},
+		"LS_BLOBStorage_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_BLOBStorage'"
+		},
+		"LS_BLOB_Storage_OUTPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_BLOB_Storage_OUTPUT'"
+		},
+		"LS_REST_AzureDataLakeStorage_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_REST_AzureDataLakeStorage'"
+		},
+		"LS_SQL_AzureDataLakeStorage_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SQL_AzureDataLakeStorage'"
+		},
+		"LS_SQL_AzureDataLakeStorage2_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SQL_AzureDataLakeStorage2'"
+		},
 		"LS_SqlServer1_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'LS_SqlServer1'"
 		},
-		"LS_AzureDataLakeStorage1_accountKey": {
+		"LS_SqlServer2_password": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'LS_AzureDataLakeStorage1'"
+			"metadata": "Secure string for 'password' of 'LS_SqlServer2'"
+		},
+		"LS_AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidevecom2.dfs.core.windows.net/"
+		},
+		"LS_AzureDataLakeStorage2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidevecom2.dfs.core.windows.net/"
+		},
+		"LS_AzureDataLakeStorage_OUTPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidevecom2.dfs.core.windows.net/"
+		},
+		"LS_AzureDataLakeStorage_PARQ_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsrawecom.dfs.core.windows.net/"
+		},
+		"LS_BLOBStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsrawecom.dfs.core.windows.net/"
+		},
+		"LS_BLOB_Storage_OUTPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidevecom2.dfs.core.windows.net/"
+		},
+		"LS_REST_AzureDataLakeStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidevecom2.dfs.core.windows.net/"
+		},
+		"LS_RestService1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://retoolapi.dev/JRuuLY/data"
+		},
+		"LS_SQL_AzureDataLakeStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidevecom2.dfs.core.windows.net/"
+		},
+		"LS_SQL_AzureDataLakeStorage2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidevecom2.dfs.core.windows.net/"
 		},
 		"LS_SqlServer1_properties_typeProperties_server": {
 			"type": "string",
@@ -27,9 +103,21 @@
 			"type": "string",
 			"defaultValue": "sa"
 		},
-		"LS_AzureDataLakeStorage1_properties_typeProperties_url": {
+		"LS_SqlServer2_properties_typeProperties_server": {
 			"type": "string",
-			"defaultValue": "https://adlssidevecom2.dfs.core.windows.net/"
+			"defaultValue": "KeerthanaA\\SQLEXPRESS"
+		},
+		"LS_SqlServer2_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "salesecom"
+		},
+		"LS_SqlServer2_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sa"
+		},
+		"sch_trigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/1edb5067-92e5-41ad-b11f-edea212e956f/resourceGroups/rg_dev_ecom/providers/Microsoft.Storage/storageAccounts/adlsrawecom"
 		},
 		"containerUri": {
 			"type": "string",
@@ -61,11 +149,65 @@
 					"LS_AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('LS_AzureDataLakeStorage1_accountKey')]"
 					},
+					"LS_AzureDataLakeStorage2_accountKey": {
+						"value": "[parameters('LS_AzureDataLakeStorage2_accountKey')]"
+					},
+					"LS_AzureDataLakeStorage_OUTPUT_accountKey": {
+						"value": "[parameters('LS_AzureDataLakeStorage_OUTPUT_accountKey')]"
+					},
+					"LS_AzureDataLakeStorage_PARQ_accountKey": {
+						"value": "[parameters('LS_AzureDataLakeStorage_PARQ_accountKey')]"
+					},
+					"LS_BLOBStorage_accountKey": {
+						"value": "[parameters('LS_BLOBStorage_accountKey')]"
+					},
+					"LS_BLOB_Storage_OUTPUT_accountKey": {
+						"value": "[parameters('LS_BLOB_Storage_OUTPUT_accountKey')]"
+					},
+					"LS_REST_AzureDataLakeStorage_accountKey": {
+						"value": "[parameters('LS_REST_AzureDataLakeStorage_accountKey')]"
+					},
+					"LS_SQL_AzureDataLakeStorage_accountKey": {
+						"value": "[parameters('LS_SQL_AzureDataLakeStorage_accountKey')]"
+					},
+					"LS_SQL_AzureDataLakeStorage2_accountKey": {
+						"value": "[parameters('LS_SQL_AzureDataLakeStorage2_accountKey')]"
+					},
 					"LS_SqlServer1_password": {
 						"value": "[parameters('LS_SqlServer1_password')]"
 					},
+					"LS_SqlServer2_password": {
+						"value": "[parameters('LS_SqlServer2_password')]"
+					},
 					"LS_AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('LS_AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"LS_AzureDataLakeStorage2_properties_typeProperties_url": {
+						"value": "[parameters('LS_AzureDataLakeStorage2_properties_typeProperties_url')]"
+					},
+					"LS_AzureDataLakeStorage_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_AzureDataLakeStorage_OUTPUT_properties_typeProperties_url')]"
+					},
+					"LS_AzureDataLakeStorage_PARQ_properties_typeProperties_url": {
+						"value": "[parameters('LS_AzureDataLakeStorage_PARQ_properties_typeProperties_url')]"
+					},
+					"LS_BLOBStorage_properties_typeProperties_url": {
+						"value": "[parameters('LS_BLOBStorage_properties_typeProperties_url')]"
+					},
+					"LS_BLOB_Storage_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_BLOB_Storage_OUTPUT_properties_typeProperties_url')]"
+					},
+					"LS_REST_AzureDataLakeStorage_properties_typeProperties_url": {
+						"value": "[parameters('LS_REST_AzureDataLakeStorage_properties_typeProperties_url')]"
+					},
+					"LS_RestService1_properties_typeProperties_url": {
+						"value": "[parameters('LS_RestService1_properties_typeProperties_url')]"
+					},
+					"LS_SQL_AzureDataLakeStorage_properties_typeProperties_url": {
+						"value": "[parameters('LS_SQL_AzureDataLakeStorage_properties_typeProperties_url')]"
+					},
+					"LS_SQL_AzureDataLakeStorage2_properties_typeProperties_url": {
+						"value": "[parameters('LS_SQL_AzureDataLakeStorage2_properties_typeProperties_url')]"
 					},
 					"LS_SqlServer1_properties_typeProperties_server": {
 						"value": "[parameters('LS_SqlServer1_properties_typeProperties_server')]"
@@ -75,10 +217,42 @@
 					},
 					"LS_SqlServer1_properties_typeProperties_userName": {
 						"value": "[parameters('LS_SqlServer1_properties_typeProperties_userName')]"
+					},
+					"LS_SqlServer2_properties_typeProperties_server": {
+						"value": "[parameters('LS_SqlServer2_properties_typeProperties_server')]"
+					},
+					"LS_SqlServer2_properties_typeProperties_database": {
+						"value": "[parameters('LS_SqlServer2_properties_typeProperties_database')]"
+					},
+					"LS_SqlServer2_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SqlServer2_properties_typeProperties_userName')]"
 					}
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "adfdevecomretail_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"sch_trigger_properties_typeProperties_scope": {
+						"value": "[parameters('sch_trigger_properties_typeProperties_scope')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'adfdevecomretail_ArmTemplate_0')]"
+			]
 		}
 	]
 }

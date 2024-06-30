@@ -5,11 +5,68 @@
 		"factoryName": {
 			"value": "adfdevecomretail"
 		},
+		"LS_AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"LS_AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"LS_AzureDataLakeStorage_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_AzureDataLakeStorage_PARQ_accountKey": {
+			"value": ""
+		},
+		"LS_BLOBStorage_accountKey": {
+			"value": ""
+		},
+		"LS_BLOB_Storage_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_REST_AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
 		"LS_SqlServer1_password": {
 			"value": ""
 		},
-		"LS_AzureDataLakeStorage1_accountKey": {
+		"LS_SqlServer2_password": {
 			"value": ""
+		},
+		"LS_AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adlssidevecom2.dfs.core.windows.net/"
+		},
+		"LS_AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://adlssidevecom2.dfs.core.windows.net/"
+		},
+		"LS_AzureDataLakeStorage_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlssidevecom2.dfs.core.windows.net/"
+		},
+		"LS_AzureDataLakeStorage_PARQ_properties_typeProperties_url": {
+			"value": "https://adlsrawecom.dfs.core.windows.net/"
+		},
+		"LS_BLOBStorage_properties_typeProperties_url": {
+			"value": "https://adlsrawecom.dfs.core.windows.net/"
+		},
+		"LS_BLOB_Storage_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlssidevecom2.dfs.core.windows.net/"
+		},
+		"LS_REST_AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://adlssidevecom2.dfs.core.windows.net/"
+		},
+		"LS_RestService1_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/JRuuLY/data"
+		},
+		"LS_SQL_AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://adlssidevecom2.dfs.core.windows.net/"
+		},
+		"LS_SQL_AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://adlssidevecom2.dfs.core.windows.net/"
 		},
 		"LS_SqlServer1_properties_typeProperties_server": {
 			"value": "KeerthanaA\\SQLEXPRESS"
@@ -20,8 +77,17 @@
 		"LS_SqlServer1_properties_typeProperties_userName": {
 			"value": "sa"
 		},
-		"LS_AzureDataLakeStorage1_properties_typeProperties_url": {
-			"value": "https://adlssidevecom2.dfs.core.windows.net/"
+		"LS_SqlServer2_properties_typeProperties_server": {
+			"value": "KeerthanaA\\SQLEXPRESS"
+		},
+		"LS_SqlServer2_properties_typeProperties_database": {
+			"value": "salesecom"
+		},
+		"LS_SqlServer2_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"sch_trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/1edb5067-92e5-41ad-b11f-edea212e956f/resourceGroups/rg_dev_ecom/providers/Microsoft.Storage/storageAccounts/adlsrawecom"
 		},
 		"containerUri": {
 			"value": ""
